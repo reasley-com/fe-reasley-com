@@ -1,0 +1,30 @@
+{
+  "name": "reasley-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --exec npx babel-node src/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reasley-com/reasley-fe.git"
+  },
+  "author": "reasley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reasley-com/reasley-fe/issues"
+  },
+  "homepage": "https://github.com/reasley-com/reasley-fe#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  }
+}

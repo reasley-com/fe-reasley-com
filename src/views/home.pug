@@ -1,0 +1,9 @@
+extends template.pug 
+include mixins/postShape
+
+block content
+    h1 Home Page
+    each post in posts
+        +postShape(post)
+    else
+        li not found
