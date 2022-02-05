@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    width: 1728px;
+    justify-content: space-between;
+    margin: 0 auto;
+    user-select: none;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div img,
+header div span {
+    margin: 0 0 0 30px;
+}
+
+.themeLight,
+.themeDark,
+.themeSearch {
+    height: 1.2rem;
+    filter: brightness(0%);
+}
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    header { width: 1376px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+    header { width: 1024px; }
+}
+
+@media screen and (max-width: 1056px) {
+    header { width: calc(100% - 2rem); }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
