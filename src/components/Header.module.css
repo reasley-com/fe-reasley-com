@@ -1,5 +1,6 @@
 header {
     display: flex;
+    height: 100px;
     width: 1728px;
     justify-content: space-between;
     margin: 0 auto;
@@ -12,15 +13,18 @@ header div {
     justify-content: space-between;
 }
 
-header div img,
-header div span {
+.themeMenu{ 
     margin: 0 0 0 30px;
+ }
+
+header div img {
+    -webkit-user-drag: none;
 }
 
 .themeLight,
 .themeDark,
 .themeSearch {
-    height: 1.2rem;
+    height: 1.8rem;
     filter: brightness(0%);
 }
 

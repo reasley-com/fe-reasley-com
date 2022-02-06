@@ -1,0 +1,48 @@
+.typography__frame {
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+}
+.typography__image__frame,
+.typography__text__frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.typography__text__frame { flex: 2; margin-left: 100px; }
+.typography__image__frame { flex: 1; align-items: center;  margin-right: 100px; }
+
+.typography__frame__top { margin-left: 40px; }
+.typography__frame__mid { margin-left: 80px; }
+.typography__frame__bot {  margin-left: 40px; }
+
+.typography__text__bold {
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+.typography__text__bsolid { font-size: 7rem; }
+.typography__text__nsolid { margin: 0 20px; }
+.typography__image { width: 400px; }
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    .typography__image { width: 400px; }
+    .typography__text__frame { margin-left: 0px; }
+    .typography__image__frame { margin-right: 0px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+    .typography__image { width: 350px; }
+}
+
+@media screen and (max-width: 1056px) {
+    .typography__text__bold { font-size: 7rem; }
+    .typography__text__bsolid { font-size: 6rem; }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}

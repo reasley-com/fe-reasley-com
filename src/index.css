@@ -1,6 +1,16 @@
+@font-face {
+    font-family: 'SSAntRegular';
+    src: local('SSAntRegular'),
+         local('SSAntRegular_otf'),
+         url('../public/SSAntRegular.otf'),
+         url('../public/SSAntRegular.ttf');
+}
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
     font-size: 10px;
 }
 
@@ -94,4 +104,30 @@
     --prism-code-8: #61afef;
     --prism-code-9: #c678dd;
     --prism-line-number: #5c6370;
+}
+
+
+body {
+    font-family: 'SSAntRegular';
+    width: 1728px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    body { width: 1376px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+    body { width: 1024px; }
+}
+
+@media screen and (max-width: 1056px) {
+    body { width: calc(100% - 2rem); }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
 }
