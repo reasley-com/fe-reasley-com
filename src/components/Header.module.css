@@ -13,9 +13,13 @@ header div {
     justify-content: space-between;
 }
 
-.themeMenu{ 
+.themeMenuDesktop {
     margin: 0 0 0 30px;
- }
+}
+
+.themeMenuMobile {
+    display: none;
+}
 
 header div img {
     -webkit-user-drag: none;
@@ -45,4 +49,6 @@ header div img {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .themeMenuDesktop { display: none; }
+    .themeMenuMobile { display: block; }
 }
