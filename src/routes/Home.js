@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from '../components/Header'
+import Notice from "../components/Notice";
+import Platform from "../components/Platform";
 import Typography from "../components/Typography";
 
 function Home() {
@@ -12,8 +14,12 @@ function Home() {
   return (
     <div>
       <Header />
+
       <Typography />
-      { loading ? (<p>s</p>) : (<p>o</p>) }
+      <Platform />
+
+      <Notice />
+      {/* { loading ? (<p>s</p>) : (<p>o</p>) } */}
     </div>
   )
 }

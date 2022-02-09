@@ -1,0 +1,38 @@
+.group__frame {
+    display: flex;
+    height: 60px;
+    justify-content: flex-end;
+}
+
+.platform__frame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+.platform__frame img {
+    width: 2.2em;
+    cursor: pointer;
+}
+
+
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1056px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 500px) {
+}
