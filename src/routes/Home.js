@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from '../components/Header'
 import Notice from "../components/Notice";
 import Platform from "../components/Platform";
+import Space from "../components/Space";
 import Typography from "../components/Typography";
 
 function Home() {
@@ -12,11 +13,13 @@ function Home() {
   }, [])
 
   return (
-    <div>
+    <div class='theme-light'>
       <Header />
 
       <Typography />
       <Platform />
+
+      <Space />
 
       <Notice />
       {/* { loading ? (<p>s</p>) : (<p>o</p>) } */}
