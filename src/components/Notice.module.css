@@ -1,0 +1,30 @@
+.notice__frame {
+    width: 1728px;
+    margin: 0 auto;
+}
+
+.notice__content__frame {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    .notice__frame { width: 1376px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+    .notice__frame { width: 1024px; }
+}
+
+@media screen and (max-width: 1056px) {
+    .notice__frame { width: calc(100% - 2rem); }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
