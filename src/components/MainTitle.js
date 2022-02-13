@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
-import styles from "./MainTitle.module.css";
+import styles from "./Maintitle.module.css";
 
-function MainTitle({ title }) {
+function Maintitle({ title }) {
     return ( 
         <div>
             <p>{ title }</p>
@@ -10,8 +10,8 @@ function MainTitle({ title }) {
     )
 }
 
-MainTitle.propTypes = {
+Maintitle.propTypes = {
     title: PropTypes.string.isRequired
 }
 
-export default MainTitle
+export default Maintitle

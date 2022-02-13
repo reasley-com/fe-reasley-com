@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from '../components/Header'
 import Notice from "../components/Notice";
+import Slider from "../components/Slider";
 import Platform from "../components/Platform";
 import Space from "../components/Space";
 import Typography from "../components/Typography";
@@ -22,6 +23,7 @@ function Home() {
       <Space />
 
       <Notice />
+      <Slider />
       {/* { loading ? (<p>s</p>) : (<p>o</p>) } */}
     </div>
   )
