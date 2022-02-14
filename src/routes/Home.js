@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import Header from '../components/Header'
 import Notice from "../components/Notice";
-import Slider from "../components/Slider";
 import Platform from "../components/Platform";
 import Space from "../components/Space";
 import Typography from "../components/Typography";
+import Carousel from "../components/Carousel";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ function Home() {
   }, [])
 
   return (
-    <div class='theme-light'>
+    <div className='theme-light'>
       <Header />
 
       <Typography />
@@ -23,7 +23,13 @@ function Home() {
       <Space />
 
       <Notice />
-      <Slider />
+      <Space />
+      <Carousel />
+
+      <Space />
+      <Space />
+      <Space />
+      <Space />
       {/* { loading ? (<p>s</p>) : (<p>o</p>) } */}
     </div>
   )

@@ -1,0 +1,10 @@
+.carousel__frame {
+    overflow: hidden;
+    height: 326px;
+    width: 1000px;
+}
+
+.carousel__frame div {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}

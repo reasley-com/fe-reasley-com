@@ -1,0 +1,7 @@
+.slider__frame {
+    max-width: 100%;
+}
+
+.slider__content {
+    object-fit: cover;
+}
