@@ -10,6 +10,7 @@ function Carousel() {
     const carouselContent = [
         { src: '/images/sample-project.png' },
         { src: '/images/sample-project.png' },
+        { src: '/images/sample-project.png' },
     ]
 
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -42,7 +43,7 @@ function Carousel() {
         <div>
             <Maintitle title='프로젝트' />
             <div className={ styles.carousel__frame } onMouseOver={(event) => { setHover(true) }} onMouseOut={(event) => { setHover(false) } } >
-                <div ref={slideRef}>
+                <div className={ styles.carousel__content } ref={slideRef}>
                     { carouselContent.map((content, index) => (
                         <Slider src={content.src} key={index} />
                     )) }

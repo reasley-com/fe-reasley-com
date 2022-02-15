@@ -1,10 +1,33 @@
 .carousel__frame {
-    overflow: hidden;
     height: 326px;
-    width: 1000px;
+    width: 1200px;
+    overflow: hidden;
 }
 
-.carousel__frame div {
-    display: flex;
+.carousel__content {
+    height: 100%;
+    white-space: nowrap;
     transition: all 0.5s ease-in-out;
+}
+
+
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    .carousel__frame { width: 918px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1056px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 500px) {
 }
