@@ -1,0 +1,6 @@
+.decoBox {
+    height: 4px;
+    width: 24px;
+    margin-bottom: 10px;
+    background: var(--bg-element5);
+}
