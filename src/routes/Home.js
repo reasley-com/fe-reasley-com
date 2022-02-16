@@ -5,6 +5,7 @@ import Platform from "../components/Platform";
 import Space from "../components/Space";
 import Typography from "../components/Typography";
 import Carousel from "../components/Carousel";
+import Twitter from "../components/Twitter";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ function Home() {
       <Notice />
       <Space />
       <Carousel />
+      <Twitter />
 
       <Space />
       <Space />

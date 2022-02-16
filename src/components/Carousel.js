@@ -40,7 +40,7 @@ function Carousel() {
     }, [currentSlide]);
 
     return ( 
-        <div>
+        <div className={ styles.carousel }>
             <Maintitle title='프로젝트' />
             <div className={ styles.carousel__frame } onMouseOver={(event) => { setHover(true) }} onMouseOut={(event) => { setHover(false) } } >
                 <div className={ styles.carousel__content } ref={slideRef}>

@@ -1,6 +1,11 @@
+.carousel {
+    width: 1200px;
+    display: inline-block;
+}
+
 .carousel__frame {
     height: 326px;
-    width: 1200px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -15,7 +20,7 @@
 
 /* Desktop */
 @media screen and (max-width: 1919px) {
-    .carousel__frame { width: 918px; }
+    .carousel { width: 918px; }
 }
 
 /* Laptop */

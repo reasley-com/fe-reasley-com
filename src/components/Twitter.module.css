@@ -1,0 +1,25 @@
+.twitter {
+    width: 400px;
+    float: right;
+}
+
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+    .twitter { width: 300px; }
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1056px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 500px) {
+}
