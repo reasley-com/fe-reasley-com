@@ -118,6 +118,11 @@ body {
     font-size: 1.4rem;
 }
 
+a:any-link {
+    text-decoration: none;
+    color: var(--text1);
+    cursor: pointer;
+}
 a:-webkit-any-link {
     text-decoration: none;
     color: var(--text1);
