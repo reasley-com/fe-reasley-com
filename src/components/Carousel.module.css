@@ -1,10 +1,10 @@
 .carousel {
-    width: 1200px;
+    width: 1260px;
     display: inline-block;
 }
 
 .carousel__frame {
-    height: 326px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
 }
@@ -25,13 +25,17 @@
 
 /* Laptop */
 @media screen and (max-width: 1440px) {
+    .carousel { width: 760px; }
 }
 
 @media screen and (max-width: 1056px) {
+    .carousel { width: calc(100% - 24rem); }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .carousel__frame { height: 200px; }
+    .carousel { width: 100%; }
 }
 
 @media screen and (max-width: 500px) {
