@@ -1,9 +1,8 @@
 .twitter {
     width: 400px;
     float: right;
+    overflow: hidden;
 }
-
-
 
 /* Desktop */
 @media screen and (max-width: 1919px) {
@@ -12,13 +11,16 @@
 
 /* Laptop */
 @media screen and (max-width: 1440px) {
+    .twitter { width: 240px; }
 }
 
 @media screen and (max-width: 1056px) {
+    .twitter { width: calc(100% - 72rem); }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .twitter { width: 100%; margin-top: 60px; }
 }
 
 @media screen and (max-width: 500px) {

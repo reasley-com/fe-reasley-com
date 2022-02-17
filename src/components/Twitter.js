@@ -13,7 +13,7 @@ function Twitter() {
                 }}
                 options={{
                     height: '400',
-                    chrome: 'noheader, nofooter',
+                    chrome: 'noheader, nofooter, noscrollbar',
                     theme: 'ligth',
                     // theme: 'dark'
                 }}
