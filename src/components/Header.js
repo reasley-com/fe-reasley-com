@@ -4,11 +4,18 @@ import styles from "./Header.module.css";
 function Header() {
     const headerContentList = ['home', 'blog', 'project', 'service']
     const headerImageList   = { themeLogo: '/theme-logo.png', themeBar: '/theme-bar.svg', themeLight: '/theme-light.svg', themeDark: '/theme-dark.svg', themeSearch: '/theme-search.svg' }
+
     return ( 
         <header>
             <div>
                 <img alt='logo' src={ headerImageList.themeLogo } />
-                { headerContentList.map((content) => <div key={ content } className={ styles.themeMenuDesktop }><Link to={ '/' + content }><img alt='menu' src={ '/header-'+content+'.png' } /></Link></div> ) }
+                { headerContentList.map((content) => (
+                    <div key={ content } className={ styles.themeMenuDesktop }>
+                        <Link to={ '/' + (content === 'home' ? '' : content) }>
+                            <img alt='menu' src={ '/header-'+content+'.png' } />
+                        </Link>
+                    </div>
+                ) ) }
             </div>
 
             <div>
