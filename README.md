@@ -7,7 +7,7 @@
 <a href="https://reasley.com"><img src="https://user-images.githubusercontent.com/33018600/149729672-ccc3ff33-407e-42e2-8ef9-dee20de024e1.png" align="left" height="95"></a>
 
 <p>
-<b>Devlop Blog</b> is a platform for recording and communicating programming knowledge. It is designed to fill in the shortcomings through distribution and utilization of what we have learned on the server. I am receiving code feedback at any time. I would appreciate it if you could leave it in the issue.
+This repository is the <b>Front Server</b> code of the Reasley Develop Blog. It is a platform created to record and deliver programming knowledge. I wait for code feedback for efficient operation and technological growth.
 
 </p>
 
@@ -23,6 +23,21 @@ Node.js 16.6.0 or newer is required.
 ### Optional packages
 - [react](https://reactjs.org/) is a javaScript library for building user interfaces
 - [prop-types](https://www.npmjs.com/package/prop-types) is Runtime type checking for React props and similar objects.
+
+<br>
+<br>
+
+## Example install usage
+
+Build Image:
+<br>
+<pre>$ docker build -t reasley-fe .</pre>
+
+<br>
+
+Build Platform:
+<br>
+- Refer to [reasley-distribute](https://github.com/reasley-com/reasley-distribute) repository for platform deployment
 
 
 <br>
