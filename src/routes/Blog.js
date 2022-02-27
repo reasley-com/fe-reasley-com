@@ -1,12 +1,17 @@
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../content/ThemeContext";
 import Header from '../components/Header'
 
 function Blog() {
-  return (
-    <div>
-      <Header />
-      <p>Blog</p>
-    </div>
-  )
+    const [theme, ThemeToggle] = useContext(ThemeContext)
+    
+    return (
+        <div className={ `frame ${theme}` }>
+            <div className='detail'>
+                <Header />
+            </div>
+        </div>
+    )
 }
 
 export default Blog;

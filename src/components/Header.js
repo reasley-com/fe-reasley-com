@@ -1,9 +1,14 @@
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../content/ThemeContext";
 import styles from "./Header.module.css";
+import useLocalStorage from "./useLocalStorage";
 
 function Header() {
     const headerContentList = ['home', 'blog', 'project', 'service']
     const headerImageList   = { themeLogo: '/theme-logo.png', themeBar: '/theme-bar.svg', themeLight: '/theme-light.svg', themeDark: '/theme-dark.svg', themeSearch: '/theme-search.svg' }
+
+    const [theme, toggleTheme] = useContext(ThemeContext)
 
     return ( 
         <header>
@@ -12,7 +17,7 @@ function Header() {
                 { headerContentList.map((content) => (
                     <div key={ content } className={ styles.themeMenuDesktop }>
                         <Link to={ '/' + (content === 'home' ? '' : content) }>
-                            <img alt='menu' src={ '/header-'+content+'.png' } />
+                            { content.charAt(0).toUpperCase() + content.slice(1) }
                         </Link>
                     </div>
                 ) ) }
@@ -20,7 +25,10 @@ function Header() {
 
             <div>
                 <div className={ styles.themeMenuDesktop }>
-                    <img alt='theme' src={ headerImageList.themeLight } className={ styles.themeLight } />
+                    <img alt='theme' 
+                        src={ headerImageList[theme] } 
+                        className={ styles[theme] }
+                        onClick={ toggleTheme } />
                 </div>
 
                 <div className={ styles.themeMenuDesktop }>

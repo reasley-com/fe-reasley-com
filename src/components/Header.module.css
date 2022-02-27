@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     user-select: none;
+    font-size: var(--text-size3)
 }
 
 header div {
@@ -29,7 +30,7 @@ header div img {
 .themeDark,
 .themeSearch {
     height: 1.8rem;
-    filter: brightness(0%);
+    filter: var(--svg-element);
 }
 
 
