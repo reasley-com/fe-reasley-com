@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../content/ThemeContext";
 import styles from "./Header.module.css";
-import useLocalStorage from "./useLocalStorage";
 
 function Header() {
     const headerContentList = ['home', 'blog', 'project', 'service']

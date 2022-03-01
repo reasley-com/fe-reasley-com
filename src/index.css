@@ -114,6 +114,8 @@ html {
 ::-webkit-scrollbar-thumb { background-color: #d6dee1; border-radius: 10px; border: 3px solid transparent; background-clip: content-box; }
 ::-webkit-scrollbar-thumb:hover { background-color: #a8bbbf; }
 
+body { overflow-y: hidden; }
+
 .frame { background-color: var(--bg-page1); }
 .detail {
     font-family: 'SSAntRegular';

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Maintitle from "./Maintitle";
 import Slider from "./Slider";
 import styles from "./Carousel.module.css";
@@ -42,7 +41,10 @@ function Carousel() {
     return ( 
         <div className={ styles.carousel }>
             <Maintitle title='프로젝트' />
-            <div className={ styles.carousel__frame } onMouseOver={(event) => { setHover(true) }} onMouseOut={(event) => { setHover(false) } } >
+            <div
+                className={ styles.carousel__frame } 
+                onMouseOver={(event) => { setHover(true) }}
+                onMouseOut={(event) => { setHover(false) } } >
                 <div className={ styles.carousel__content } ref={slideRef}>
                     { carouselContent.map((content, index) => (
                         <Slider src={content.src} key={index} />

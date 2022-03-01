@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     /* height: 780px; */
-    height: calc(100vh - 100px - 70px);
+    height: calc(100vh - 70px);
 }
 .typography__text__frame,
 .typography__image__frame {

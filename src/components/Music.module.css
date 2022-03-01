@@ -1,0 +1,54 @@
+.music__frame {
+    display: inline-flex;
+    align-items: center;
+    height: 70px;
+    user-select: none;
+}
+
+.music__name {
+    margin-right: 10px;
+}
+
+.music__time {
+    display: inline-block;
+    height: 3px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: var(--text1);
+    margin-right: 10px;
+}
+
+.music__action {
+    cursor: pointer;
+}
+.music__action,
+.music__icon {
+    height: 1.6rem;
+    margin: 0 6px;
+}
+
+.music__icon + input {
+    display: block;
+    position: absolute;
+    
+}
+.music__icon:hover + input {
+    display: block;
+    position: absolute;
+}
+
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+}
+
+/* Laptop */
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1056px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}

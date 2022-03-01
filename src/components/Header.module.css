@@ -1,11 +1,14 @@
 header {
+    position: fixed;
     display: flex;
     height: 100px;
     width: 1728px;
     justify-content: space-between;
     margin: 0 auto;
     user-select: none;
-    font-size: var(--text-size3)
+    font-size: var(--text-size3);
+    background-color: var(--bg-page1);
+    z-index: 1;
 }
 
 header div {

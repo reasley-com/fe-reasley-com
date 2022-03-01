@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Timeline } from 'react-twitter-widgets'
+import { ThemeContext } from "../content/ThemeContext";
 import Maintitle from './Maintitle';
 import styles from "./Twitter.module.css";
 
 function Twitter() {
+    const [theme, toggleTheme] = useContext(ThemeContext)
+
     return ( 
         <div className={ styles.twitter }>
             <Maintitle title='트위터' />
@@ -14,8 +18,7 @@ function Twitter() {
                 options={{
                     height: '400',
                     chrome: 'noheader, nofooter, noscrollbar',
-                    theme: 'ligth',
-                    // theme: 'dark'
+                    theme: theme === 'themeLight' ? 'light' : 'dark',
                 }}
                 renderError={_err => 'Twitter timeline load fail' }
             />

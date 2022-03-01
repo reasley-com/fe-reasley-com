@@ -7,15 +7,37 @@ import Typography from "../components/Typography";
 import Carousel from "../components/Carousel";
 import Twitter from "../components/Twitter";
 import { ThemeContext } from "../content/ThemeContext";
+import Music from "../components/Music";
 
 function Home() {
-    const [loading, setLoading] = useState(true);
-
+    const [loading, setLoading] = useState(true)
     useEffect(() => { 
         setLoading(false)
     }, [])
 
     const [theme, ThemeToggle] = useContext(ThemeContext)
+    const [scrollY, setScrollY] = useState(0)
+    
+    useEffect(() => {
+        if ( scrollY === -100 ) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
+        if ( scrollY === 100 ) {
+            window.scrollTo({
+                top: 900,
+                behavior: 'smooth'
+            })
+        }
+        
+    }, [scrollY])
+
+    useEffect(() => {
+        window.addEventListener('wheel', (e) => setScrollY(e.deltaY))
+    })
 
     return (
         <div className={ `frame ${theme}` }>
@@ -23,6 +45,7 @@ function Home() {
                 <Header />
 
                 <Typography />
+                <Music />
                 <Platform />
 
                 <Space />
