@@ -30,7 +30,7 @@
 .music__icon + input {
     display: block;
     position: absolute;
-    
+    right: 0;
 }
 .music__icon:hover + input {
     display: block;
