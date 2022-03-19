@@ -1,8 +1,8 @@
 .typography__frame {
     display: flex;
     justify-content: space-around;
-    /* height: 780px; */
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px - 80px);
+    padding-top: 80px;
 }
 .typography__text__frame,
 .typography__image__frame {
