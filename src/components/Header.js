@@ -9,6 +9,35 @@ function Header() {
 
     const [theme, toggleTheme] = useContext(ThemeContext)
 
+    const [scrollY, setScrollY] = useState(0)
+
+    useEffect(() => {
+        if ( scrollY === -100 ) {
+            document.querySelector('header').className = ''
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
+        if ( scrollY === 100 ) {
+            document.querySelector('header').className = styles.sticky
+            window.scrollTo({
+                top: 900,
+                behavior: 'smooth'
+            })
+        }
+        
+    }, [scrollY])
+
+    useEffect(() => {
+        setScrollY(document.documentElement.scrollTop == 0 ? 0 : 100)
+    }, [])
+
+    useEffect(() => {
+        window.addEventListener('wheel', (e) => setScrollY(e.deltaY))
+    })
+
     return ( 
         <header>
             <div>

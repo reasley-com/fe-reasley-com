@@ -1,7 +1,11 @@
+.sticky {
+    height: 70px;
+}
+
 header {
     position: fixed;
     display: flex;
-    height: 70px;
+    height: 100px;
     width: 1728px;
     justify-content: space-between;
     margin: 0 auto;
@@ -9,6 +13,7 @@ header {
     font-size: var(--text-size3);
     background-color: var(--bg-page1);
     z-index: 1;
+    transition: height 0.6s;
 }
 
 header div {

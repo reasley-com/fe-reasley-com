@@ -16,28 +16,6 @@ function Home() {
     }, [])
 
     const [theme, ThemeToggle] = useContext(ThemeContext)
-    const [scrollY, setScrollY] = useState(0)
-    
-    useEffect(() => {
-        if ( scrollY === -100 ) {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-        }
-
-        if ( scrollY === 100 ) {
-            window.scrollTo({
-                top: 900,
-                behavior: 'smooth'
-            })
-        }
-        
-    }, [scrollY])
-
-    useEffect(() => {
-        window.addEventListener('wheel', (e) => setScrollY(e.deltaY))
-    })
 
     return (
         <div className={ `frame ${theme}` }>

@@ -23,6 +23,7 @@
     width: 1.4rem;
     margin: 0 6px;
     cursor: pointer;
+    filter: var(--svg-element);
 } 
 
 .music_area { height: 100%; display: flex; }
